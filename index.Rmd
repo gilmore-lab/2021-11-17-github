@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - What are Git and GitHub?
 - How and why could I use them?
+- Git going!
 
 # What are Git and GitHub
 
@@ -33,7 +34,12 @@ knitr::opts_chunk$set(echo = FALSE)
     - Each version gets its own 'name', e.g., `85c5f7a`
 - A `branch` is a part of a project, e.g., `main` or `testing_new_feature`.
     - Git keeps track of branch-specific histories.
-- Can `merge` branches.
+    
+---
+
+- Can `merge` branches or `revert` to earlier versions.
+- Like MS Word's track changes, but not automatically saved.
+- Git tutorial: <https://www.w3schools.com/git/default.asp?remote=github>
 
 ## GitHub
 
@@ -52,12 +58,50 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Do I make and edit text files?
     - e.g., data files, R code, SPSS syntax, Python code, HTML, Markdown, etc.
-- Do I share making and editing text files with other people?
+- Do I (want to) share making and editing text files with other people?
 - Do I want to keep track of the changes?
 
 ## Use cases
 
+- Editing code on GitHub
 - Data analysis
 - Web sites
 
-## Data analysis
+## Use Case: Editing code on GitHub
+
+- Visit the repo: <https://github.com/gilmore-lab/2021-11-17/>
+- Click on the pencil icon to the upper right of the `README.md` file.
+- Make a change, save it, and *commit* the change.
+
+## Steps
+
+0. Create account on GitHub
+1. Go to my GitHub account
+2. Create a new repository
+3. `Clone` the repo to your local machine
+4. Edit the local copy; save, and commit.
+5. Push the changed version back to GitHub.
+
+## Use Case: Data analysis
+
+- I want to analyze some data and document my analysis workflow
+- I want my workflow to be reproducible to me (and to others)
+- I want to share my workflow with other people to be fully transparent
+- I want to keep track of the history of my analyses
+
+## Steps
+
+1. Create a repo
+2. Create `New Project` in RStudio
+
+# Git goin' !
+
+## Tips
+
+- Make a repo for *every* new project.
+    - Pick sensible names.
+    - Can change later, but still.
+- Pick a text editor you like.
+- RStudio includes Git and GitHub integration.
+- Use RStudio projects.
+- Consider GitHub's "Pages" feature to turn your repo/project into a website.

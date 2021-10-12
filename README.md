@@ -9,3 +9,5 @@ Talk Rick Gilmore gave in the PSU IO Psychology practicum.
 
 To render the talk, clone the repo and run `rmarkdown::render('index.Rmd')` from the repository's root directory.
 
+- [Another markdown file](another.md) to illustrate how to use markdown files to make a simple web site.
+
