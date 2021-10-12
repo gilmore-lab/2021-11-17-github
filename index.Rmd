@@ -30,14 +30,34 @@ knitr::opts_chunk$set(echo = FALSE)
 - A `repository or repo` is a collection of related text files
 - A `commit` is a time/date-stamped 'version' of a set of text files.
     - Git keeps track of how versions differ.
-    - Each version gets its own 'name', e.g., 
+    - Each version gets its own 'name', e.g., `85c5f7a`
+- A `branch` is a part of a project, e.g., `main` or `testing_new_feature`.
+    - Git keeps track of branch-specific histories.
+- Can `merge` branches.
 
 ## GitHub
 
 - A commercial web service: <https://github.com>
 - [Acquired by Microsoft in 2018](https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/)
-- Use Git, but share code
+- Use Git, but share code with other people
 
 ## GitLab
 
+- GitHub not the only game in town
+- <https://git.psu.edu>
 
+# How and why could I use them?
+
+## Questions to ponder
+
+- Do I make and edit text files?
+    - e.g., data files, R code, SPSS syntax, Python code, HTML, Markdown, etc.
+- Do I share making and editing text files with other people?
+- Do I want to keep track of the changes?
+
+## Use cases
+
+- Data analysis
+- Web sites
+
+## Data analysis
