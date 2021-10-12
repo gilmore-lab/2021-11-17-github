@@ -4,7 +4,7 @@ Talk Rick Gilmore gave in the PSU I/O Psychology practicum.
 
 ## Contents
 
-- R Markdown source file: <index.Rmd>
+- R Markdown [source file](index.Rmd).
 - [HTML format slides](https://gilmore-lab.github.io/2021-11-17-github/index.html)--use the arrow keys to navigate through the slides.
 
 To render the talk, clone the repo and run `rmarkdown::render('index.Rmd')` from the repository's root directory.

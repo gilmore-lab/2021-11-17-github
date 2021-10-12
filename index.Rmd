@@ -104,4 +104,11 @@ knitr::opts_chunk$set(echo = FALSE)
 - Pick a text editor you like.
 - RStudio includes Git and GitHub integration.
 - Use RStudio projects.
+
+---
+
 - Consider GitHub's "Pages" feature to turn your repo/project into a website.
+- Learn Markdown.
+- Hide files from git by adding to `.gitignore`.
+    - `*.Rproj` file for sure
+    - Sensitive or proprietary data
