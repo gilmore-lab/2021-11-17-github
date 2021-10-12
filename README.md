@@ -1,6 +1,6 @@
 # 2021-11-17-github
 
-Talk Rick Gilmore gave in the PSU IO Psychology practicum.
+Talk Rick Gilmore gave in the PSU I/O Psychology practicum.
 
 ## Contents
 
