@@ -1,0 +1,43 @@
+---
+title: "Git yer GitHub on"
+author: "Rick Gilmore"
+date: "`r Sys.time()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Preliminaries
+
+## Agenda
+
+- What are Git and GitHub?
+- How and why could I use them?
+
+# What are Git and GitHub
+
+## Git
+
+- A distributed software version control system
+- Developed by Linus Torvalds of Linux fame
+- A database for keeping track of the history of changes in text files
+- Open-source and platform/operating system agnostic.
+
+## Git wonky
+
+- A `repository or repo` is a collection of related text files
+- A `commit` is a time/date-stamped 'version' of a set of text files.
+    - Git keeps track of how versions differ.
+    - Each version gets its own 'name', e.g., 
+
+## GitHub
+
+- A commercial web service: <https://github.com>
+- [Acquired by Microsoft in 2018](https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/)
+- Use Git, but share code
+
+## GitLab
+
+
