@@ -2,12 +2,34 @@
 title: "Git yer GitHub on"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
-output: ioslides_presentation
+css: css/ioslides.css
+output: 
+  ioslides_presentation:
+    self_contained: false
+    widescreen: true
+    lib_dir: libs
+    incremental: false
+    transition: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE,
+                      fig.align = 'center')
 ```
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 
 ## Preliminaries
 
@@ -32,25 +54,26 @@ knitr::opts_chunk$set(echo = FALSE)
 - A `commit` is a time/date-stamped 'version' of a set of text files.
     - Git keeps track of how versions differ.
     - Each version gets its own 'name', e.g., `85c5f7a`
-- A `branch` is a part of a project, e.g., `main` or `testing_new_feature`.
-    - Git keeps track of branch-specific histories.
     
 ---
 
+- A `branch` is a part of a project, e.g., `main` or `testing_new_feature`.
+    - Git keeps track of branch-specific histories.
 - Can `merge` branches or `revert` to earlier versions.
-- Like MS Word's track changes, but not automatically saved.
+- Like MS Word's track changes, but *not* automatically saved.
 - Git tutorial: <https://www.w3schools.com/git/default.asp?remote=github>
 
 ## GitHub
 
 - A commercial web service: <https://github.com>
 - [Acquired by Microsoft in 2018](https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/)
-- Use Git, but share code with other people
+- Use Git on your local machine(s), but share code with other people via the web
 
 ## GitLab
 
 - GitHub not the only game in town
 - <https://git.psu.edu>
+- ROG wishes that PSU supported GitHub, too.
 
 # How and why could I use them?
 
@@ -64,8 +87,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Use cases
 
 - Editing code on GitHub
-- Data analysis
-- Web sites
+- Edit locally, push to GitHub
+    - Standard workflow
+    - Data analysis
+    - Talks as web sites
 
 ## Use Case: Editing code on GitHub
 
@@ -73,10 +98,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - Click on the pencil icon to the upper right of the `README.md` file.
 - Make a change, save it, and *commit* the change.
 
-## Steps
+## Standard workflow
 
 0. Create account on GitHub
-1. Go to my GitHub account
+1. Go to your GitHub page or project/lab page
 2. Create a new repository
 3. `Clone` the repo to your local machine
 4. Edit the local copy; save, and commit.
@@ -91,8 +116,163 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Steps
 
-1. Create a repo
-2. Create `New Project` in RStudio
+1. In your browser, create a repo
+2. `Clone` the repo to your local machine
+3. In RStudio, create a new project
+3. Work in the project
+4. Save, commit, push (and repeat)
+
+## Create a repo
+
+```{r, out.width="900px"}
+knitr::include_graphics("img/github-new-repo.png")
+```
+
+---
+
+```{r}
+knitr::include_graphics("img/github-create-new-repo.png")
+```
+
+---
+
+```{r}
+knitr::include_graphics("img/github-create-new-repo-2.png")
+```
+
+## 'Clone' the repo
+
+```{r}
+knitr::include_graphics("img/github-clone-repo.png")
+```
+
+## Create an RStudio project
+
+```{r, out.width="500px"}
+knitr::include_graphics("img/rstudio-new-project.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-create-project-version-control.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-create-project-from-version-control-git.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-clone-git-repository.png")
+```
+
+## Make initial commit
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-1.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-2.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-3.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-4.png")
+```
+
+## What is `.gitignore`?
+
+- Tells git to ignore these files
+- Ignore `*.Rproj` file--your settings are your own
+- Ignore `.DS_store` files on Mac OS--your settings are your own
+- Maybe ignore data files (to protect identities)--<span class="red">GitHub is public</span>
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-5.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-6.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-7.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/rstudio-git-tab-8.png")
+```
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/github-after-initial-commit.png")
+```
+
+## Edit the repo
+
+```{r}
+knitr::include_graphics("img/rstudio-new-rmarkdown.png")
+```
+
+---
+
+```{r}
+knitr::include_graphics("img/rstudio-new-analysis-1.png")
+```
+
+---
+
+```{r}
+knitr::include_graphics("img/rstudio-new-analysis-2.png")
+```
+
+## Use Case: Talks as web pages
+
+1. Create the talk repo
+2. Tip: Date in the repo name, e.g. `2021-11-17-github`
+
+---
+
+```{r, out.width="800px"}
+knitr::include_graphics("img/github-rmarkdown-ioslides-repo.png")
+```
+
+<https://github.com/psu-psychology/rmarkdown-ioslides>
+
+---
+
+```{r}
+knitr::include_graphics("img/github-pages-1.png")
+```
+
+---
+
+```{r}
+knitr::include_graphics("img/github-pages-2.png")
+```
 
 # Git goin' !
 
@@ -112,3 +292,11 @@ knitr::opts_chunk$set(echo = FALSE)
 - Hide files from git by adding to `.gitignore`.
     - `*.Rproj` file for sure
     - Sensitive or proprietary data
+    
+---
+
+- Create an *organization* for sets of shared projects, e.g., [github.com/gilmore-lab](https://github.com/gilmore-lab)
+- A 'safer' workflow involves committing to a branch, then merging.
+- It's not Box or OneDrive: You have to pull (download) and push (upload) yourself.
+- If using RStudio, render all changed files before committing and pushing.
+    - Makes sure your code runs before you move on to the next thing
