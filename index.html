@@ -40,7 +40,7 @@
     };
   </script>
 
-  <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+  <script src="libs/header-attrs-2.11/header-attrs.js"></script>
   <link href="libs/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
   <link href="libs/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
   <link href="libs/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
@@ -109,7 +109,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2021-10-20 11:54:45</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2021-11-15 09:27:11</p>
           </hgroup>
   </slide>
 
@@ -131,6 +131,10 @@ slides > slide:not(.nobackground):after {
 
 <slide class=""><hgroup><h2>Preliminaries</h2></hgroup><article  id="preliminaries">
 
+<ul>
+<li></li>
+</ul>
+
 </article></slide><slide class=""><hgroup><h2>Agenda</h2></hgroup><article  id="agenda">
 
 <ul>
@@ -144,10 +148,14 @@ slides > slide:not(.nobackground):after {
 </article></slide><slide class=""><hgroup><h2>Git</h2></hgroup><article  id="git">
 
 <ul>
-<li>A distributed software version control system</li>
+<li>A <em>distributed</em> software version control system
+
+<ul>
+<li>Code base distributed across multiple machines</li>
+</ul></li>
 <li>Developed by Linus Torvalds of Linux fame</li>
 <li>A database for keeping track of the history of changes in text files</li>
-<li>Open-source and platform/operating system agnostic.</li>
+<li>Open-source and platform/operating system agnostic</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Git wonky</h2></hgroup><article  id="git-wonky">
@@ -158,7 +166,7 @@ slides > slide:not(.nobackground):after {
 
 <ul>
 <li>Git keeps track of how versions differ.</li>
-<li>Each version gets its own &lsquo;name&rsquo;, e.g., <code>85c5f7a</code></li>
+<li>Each version gets its own unique &lsquo;name&rsquo;, e.g., <code>85c5f7a</code></li>
 </ul></li>
 </ul>
 
@@ -171,7 +179,12 @@ slides > slide:not(.nobackground):after {
 <li>Git keeps track of branch-specific histories.</li>
 </ul></li>
 <li>Can <code>merge</code> branches or <code>revert</code> to earlier versions.</li>
-<li>Like MS Word’s track changes, but <em>not</em> automatically saved.</li>
+<li>Like MS Word’s track changes, but <em>not</em> automatically saved.
+
+<ul>
+<li><span class="red">
+I repeat, not automatically saved!</span></li>
+</ul></li>
 <li>Git tutorial: <a href='https://www.w3schools.com/git/default.asp?remote=github' title=''>https://www.w3schools.com/git/default.asp?remote=github</a></li>
 </ul>
 
@@ -188,7 +201,11 @@ slides > slide:not(.nobackground):after {
 <ul>
 <li>GitHub not the only game in town</li>
 <li><a href='https://git.psu.edu' title=''>https://git.psu.edu</a></li>
-<li>ROG wishes that PSU supported GitHub, too.</li>
+<li>ROG wishes that PSU supported GitHub, too.
+
+<ul>
+<li>Why don’t we? It’s complicated.</li>
+</ul></li>
 </ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>How and why could I use them?</h2></hgroup><article  id="how-and-why-could-i-use-them">
@@ -203,6 +220,7 @@ slides > slide:not(.nobackground):after {
 </ul></li>
 <li>Do I (want to) share making and editing text files with other people?</li>
 <li>Do I want to keep track of the changes?</li>
+<li>Do I want to produce reproducible workflows and share them openly with other people?</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Use cases</h2></hgroup><article  id="use-cases">
@@ -336,21 +354,22 @@ GitHub is public</span></li>
 
 </article></slide><slide class=""><hgroup><h2>Edit the repo</h2></hgroup><article  id="edit-the-repo">
 
-<p><img src="img/rstudio-new-rmarkdown.png" width="783" style="display: block; margin: auto;" /></p>
+<p><img src="img/rstudio-new-rmarkdown.png" width="800px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/rstudio-new-analysis-1.png" width="796" style="display: block; margin: auto;" /></p>
+<p><img src="img/rstudio-new-analysis-1.png" width="800px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/rstudio-new-analysis-2.png" width="792" style="display: block; margin: auto;" /></p>
+<p><img src="img/rstudio-new-analysis-2.png" width="800px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2>Use Case: Talks as web pages</h2></hgroup><article  id="use-case-talks-as-web-pages">
 
 <ol>
 <li>Create the talk repo</li>
-<li>Tip: Date in the repo name, e.g. <code>2021-11-17-github</code></li>
+<li>Tip: Put date in the repo name, e.g. <code>2021-11-17-github</code></li>
+<li>Tip: Use international standard for dates, e.g., &lsquo;YYYY-MM-DD&rsquo;</li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
@@ -378,16 +397,19 @@ GitHub is public</span></li>
 <li>Pick sensible names.</li>
 <li>Can change later, but still.</li>
 </ul></li>
-<li>Pick a text editor you like.</li>
-<li>RStudio includes Git and GitHub integration.</li>
+<li>RStudio includes Git and GitHub integration.
+
+<ul>
 <li>Use RStudio projects.</li>
+</ul></li>
+<li>Outside of RStudio, pick text editor you like</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
 <ul>
 <li>Consider GitHub’s &ldquo;Pages&rdquo; feature to turn your repo/project into a website.</li>
-<li>Learn Markdown.</li>
+<li>Learn <a href='https://www.markdownguide.org/cheat-sheet/' title=''>Markdown</a></li>
 <li>Hide files from git by adding to <code>.gitignore</code>.
 
 <ul>
@@ -405,9 +427,23 @@ GitHub is public</span></li>
 <li>If using RStudio, render all changed files before committing and pushing.
 
 <ul>
-<li>Makes sure your code runs before you move on to the next thing</li>
+<li>Makes sure your code runs before you move on to the next thing.</li>
 </ul></li>
-</ul></article></slide>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Lessons learned</h2></hgroup><article  id="lessons-learned">
+
+<ul>
+<li>It’s hard to share a code base, data set, …</li>
+<li>Tension between what works inside a team and what is transparent to others</li>
+<li>Tension between working quickly and making robust and clear code</li>
+<li>Be wary and especially careful with data about people</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Thank you</h2></hgroup><article  id="thank-you">
+
+<div class="centered">
+<p>Rick Gilmore</br> rog1@psu.edu</br> 114 Moore</br> <a href='https://gilmore-lab.github.io/' title=''>https://gilmore-lab.github.io/</a></br> <a href='https://github.com/gilmore-lab/' title=''>https://github.com/gilmore-lab/</a></p></div></article></slide>
 
 
   <slide class="backdrop"></slide>

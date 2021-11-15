@@ -33,6 +33,8 @@ slides > slide:not(.nobackground):after {
 
 ## Preliminaries
 
+- 
+
 ## Agenda
 
 - What are Git and GitHub?
@@ -43,17 +45,18 @@ slides > slide:not(.nobackground):after {
 
 ## Git
 
-- A distributed software version control system
+- A *distributed* software version control system
+    - Code base distributed across multiple machines
 - Developed by Linus Torvalds of Linux fame
 - A database for keeping track of the history of changes in text files
-- Open-source and platform/operating system agnostic.
+- Open-source and platform/operating system agnostic
 
 ## Git wonky
 
 - A `repository or repo` is a collection of related text files
 - A `commit` is a time/date-stamped 'version' of a set of text files.
     - Git keeps track of how versions differ.
-    - Each version gets its own 'name', e.g., `85c5f7a`
+    - Each version gets its own unique 'name', e.g., `85c5f7a`
     
 ---
 
@@ -61,6 +64,7 @@ slides > slide:not(.nobackground):after {
     - Git keeps track of branch-specific histories.
 - Can `merge` branches or `revert` to earlier versions.
 - Like MS Word's track changes, but *not* automatically saved.
+    - <span class="red">I repeat, not automatically saved!</span>
 - Git tutorial: <https://www.w3schools.com/git/default.asp?remote=github>
 
 ## GitHub
@@ -74,6 +78,7 @@ slides > slide:not(.nobackground):after {
 - GitHub not the only game in town
 - <https://git.psu.edu>
 - ROG wishes that PSU supported GitHub, too.
+    - Why don't we? It's complicated.
 
 # How and why could I use them?
 
@@ -83,6 +88,7 @@ slides > slide:not(.nobackground):after {
     - e.g., data files, R code, SPSS syntax, Python code, HTML, Markdown, etc.
 - Do I (want to) share making and editing text files with other people?
 - Do I want to keep track of the changes?
+- Do I want to produce reproducible workflows and share them openly with other people?
 
 ## Use cases
 
@@ -233,26 +239,27 @@ knitr::include_graphics("img/github-after-initial-commit.png")
 
 ## Edit the repo
 
-```{r}
+```{r, out.width="800px"}
 knitr::include_graphics("img/rstudio-new-rmarkdown.png")
 ```
 
 ---
 
-```{r}
+```{r, out.width="800px"}
 knitr::include_graphics("img/rstudio-new-analysis-1.png")
 ```
 
 ---
 
-```{r}
+```{r, out.width="800px"}
 knitr::include_graphics("img/rstudio-new-analysis-2.png")
 ```
 
 ## Use Case: Talks as web pages
 
 1. Create the talk repo
-2. Tip: Date in the repo name, e.g. `2021-11-17-github`
+2. Tip: Put date in the repo name, e.g. `2021-11-17-github`
+3. Tip: Use international standard for dates, e.g., 'YYYY-MM-DD'
 
 ---
 
@@ -281,14 +288,14 @@ knitr::include_graphics("img/github-pages-2.png")
 - Make a repo for *every* new project.
     - Pick sensible names.
     - Can change later, but still.
-- Pick a text editor you like.
 - RStudio includes Git and GitHub integration.
-- Use RStudio projects.
+    - Use RStudio projects.
+- Outside of RStudio, pick text editor you like
 
 ---
 
 - Consider GitHub's "Pages" feature to turn your repo/project into a website.
-- Learn Markdown.
+- Learn [Markdown](https://www.markdownguide.org/cheat-sheet/)
 - Hide files from git by adding to `.gitignore`.
     - `*.Rproj` file for sure
     - Sensitive or proprietary data
@@ -299,4 +306,23 @@ knitr::include_graphics("img/github-pages-2.png")
 - A 'safer' workflow involves committing to a branch, then merging.
 - It's not Box or OneDrive: You have to pull (download) and push (upload) yourself.
 - If using RStudio, render all changed files before committing and pushing.
-    - Makes sure your code runs before you move on to the next thing
+    - Makes sure your code runs before you move on to the next thing.
+    
+## Lessons learned
+
+- It's hard to share a code base, data set, ...
+- Tension between what works inside a team and what is transparent to others
+- Tension between working quickly and making robust and clear code
+- Be wary and especially careful with data about people
+    
+## Thank you 
+
+<div class="centered">
+
+Rick Gilmore</br>
+rog1\@psu.edu</br>
+114 Moore</br>
+https://gilmore-lab.github.io/</br>
+https://github.com/gilmore-lab/
+
+</div>
