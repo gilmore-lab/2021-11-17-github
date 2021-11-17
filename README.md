@@ -5,6 +5,7 @@ Talk Rick Gilmore gave in the PSU I/O Psychology practicum.
 ## Attendees
 
 - Rick Gilmore
+- James LeBreton
 
 ## Contents
 
