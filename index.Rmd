@@ -64,7 +64,7 @@ slides > slide:not(.nobackground):after {
 
 ## Git wonky
 
-- A `repository' or `repo` is a collection of related text files
+- A `repository` or `repo` is a collection of related text files
 - A `commit` is a time/date-stamped 'version' of a set of text files.
     - Git keeps track of how versions differ.
     - Each version gets its own unique 'name', e.g., `85c5f7a`
