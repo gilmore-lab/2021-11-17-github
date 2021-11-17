@@ -2,6 +2,10 @@
 
 Talk Rick Gilmore gave in the PSU I/O Psychology practicum.
 
+## Attendees
+
+- Rick Gilmore
+
 ## Contents
 
 - R Markdown [source file](index.Rmd).
