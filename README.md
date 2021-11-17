@@ -6,6 +6,7 @@ Talk Rick Gilmore gave in the PSU I/O Psychology practicum.
 
 - Rick Gilmore
 - James LeBreton
+- David Schilligner
 
 ## Contents
 
