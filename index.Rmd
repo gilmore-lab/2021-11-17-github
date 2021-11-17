@@ -14,7 +14,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
-                      fig.align = 'center')
+                      fig.align = 'center',
+                      out.width = "900px")
 ```
 
 <!-- Scrolling final reference page -->
@@ -33,7 +34,17 @@ slides > slide:not(.nobackground):after {
 
 ## Preliminaries
 
-- 
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/>
+<img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/>
+<img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/>
+<img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/>
+<img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/>
+<img src="img/sleic.png" height=150px/></br>
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
+</div>
+
+<!-- Gilmore photo biography -->
 
 ## Agenda
 
@@ -53,7 +64,7 @@ slides > slide:not(.nobackground):after {
 
 ## Git wonky
 
-- A `repository or repo` is a collection of related text files
+- A `repository' or `repo` is a collection of related text files
 - A `commit` is a time/date-stamped 'version' of a set of text files.
     - Git keeps track of how versions differ.
     - Each version gets its own unique 'name', e.g., `85c5f7a`
@@ -85,8 +96,13 @@ slides > slide:not(.nobackground):after {
 ## Questions to ponder
 
 - Do I make and edit text files?
-    - e.g., data files, R code, SPSS syntax, Python code, HTML, Markdown, etc.
+    - e.g., data files (your data are text files, no?)
+    - R code, SPSS syntax, Python, MATLAB code
+    - HTML, JavaScript, CSS, Markdown, etc.
 - Do I (want to) share making and editing text files with other people?
+
+---
+
 - Do I want to keep track of the changes?
 - Do I want to produce reproducible workflows and share them openly with other people?
 
@@ -100,7 +116,7 @@ slides > slide:not(.nobackground):after {
 
 ## Use Case: Editing code on GitHub
 
-- Visit the repo: <https://github.com/gilmore-lab/2021-11-17/>
+- Visit the repo: <https://github.com/gilmore-lab/2021-11-17-github/>
 - Click on the pencil icon to the upper right of the `README.md` file.
 - Make a change, save it, and *commit* the change.
 
@@ -110,8 +126,8 @@ slides > slide:not(.nobackground):after {
 1. Go to your GitHub page or project/lab page
 2. Create a new repository
 3. `Clone` the repo to your local machine
-4. Edit the local copy; save, and commit.
-5. Push the changed version back to GitHub.
+4. Edit the local copy; save, and `commit`
+5. `Push` the changed version back to GitHub
 
 ## Use Case: Data analysis
 
@@ -205,7 +221,7 @@ knitr::include_graphics("img/rstudio-git-tab-4.png")
 - Tells git to ignore these files
 - Ignore `*.Rproj` file--your settings are your own
 - Ignore `.DS_store` files on Mac OS--your settings are your own
-- Maybe ignore data files (to protect identities)--<span class="red">GitHub is public</span>
+- Maybe ignore data files (to protect identities)--<span class="red">GitHub is public (unless you specify otherwise)</span>
 
 ---
 
@@ -235,6 +251,19 @@ knitr::include_graphics("img/rstudio-git-tab-8.png")
 
 ```{r, out.width="800px"}
 knitr::include_graphics("img/github-after-initial-commit.png")
+```
+
+## Pro tips
+
+- Exclude your `.Rhistory` from version control.
+- Exclude (and don't use!) the `.RData` file
+  - Regenerate all internal data states anew
+  - Avoid hidden dependencies in your code
+
+---
+
+```{r}
+knitr::include_graphics("img/tools-project-options-general.png")
 ```
 
 ## Edit the repo
@@ -315,7 +344,7 @@ knitr::include_graphics("img/github-pages-2.png")
 - Tension between working quickly and making robust and clear code
 - Be wary and especially careful with data about people
     
-## Thank you 
+## Do great work! 
 
 <div class="centered">
 
@@ -324,5 +353,8 @@ rog1\@psu.edu</br>
 114 Moore</br>
 https://gilmore-lab.github.io/</br>
 https://github.com/gilmore-lab/
+</br>
+</br>
+https://gilmore-lab.github.io/2021-11-17-github/
 
 </div>

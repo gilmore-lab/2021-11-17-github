@@ -109,7 +109,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2021-11-15 09:27:11</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2021-11-17 12:32:45</p>
           </hgroup>
   </slide>
 
@@ -131,9 +131,10 @@ slides > slide:not(.nobackground):after {
 
 <slide class=""><hgroup><h2>Preliminaries</h2></hgroup><article  id="preliminaries">
 
-<ul>
-<li></li>
-</ul>
+<div class="centered">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/> <img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/> <img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/> <img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/> <img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/> <img src="img/sleic.png" height=150px/></br> <img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px></p></div>
+
+<!-- Gilmore photo biography -->
 
 </article></slide><slide class=""><hgroup><h2>Agenda</h2></hgroup><article  id="agenda">
 
@@ -161,7 +162,7 @@ slides > slide:not(.nobackground):after {
 </article></slide><slide class=""><hgroup><h2>Git wonky</h2></hgroup><article  id="git-wonky">
 
 <ul>
-<li>A <code>repository or repo</code> is a collection of related text files</li>
+<li>A <code>repository&#39; or</code>repo` is a collection of related text files</li>
 <li>A <code>commit</code> is a time/date-stamped &lsquo;version&rsquo; of a set of text files.
 
 <ul>
@@ -216,9 +217,16 @@ I repeat, not automatically saved!</span></li>
 <li>Do I make and edit text files?
 
 <ul>
-<li>e.g., data files, R code, SPSS syntax, Python code, HTML, Markdown, etc.</li>
+<li>e.g., data files (your data are text files, no?)</li>
+<li>R code, SPSS syntax, Python, MATLAB code</li>
+<li>HTML, JavaScript, CSS, Markdown, etc.</li>
 </ul></li>
 <li>Do I (want to) share making and editing text files with other people?</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<ul>
 <li>Do I want to keep track of the changes?</li>
 <li>Do I want to produce reproducible workflows and share them openly with other people?</li>
 </ul>
@@ -239,7 +247,7 @@ I repeat, not automatically saved!</span></li>
 </article></slide><slide class=""><hgroup><h2>Use Case: Editing code on GitHub</h2></hgroup><article  id="use-case-editing-code-on-github">
 
 <ul>
-<li>Visit the repo: <a href='https://github.com/gilmore-lab/2021-11-17/' title=''>https://github.com/gilmore-lab/2021-11-17/</a></li>
+<li>Visit the repo: <a href='https://github.com/gilmore-lab/2021-11-17-github/' title=''>https://github.com/gilmore-lab/2021-11-17-github/</a></li>
 <li>Click on the pencil icon to the upper right of the <code>README.md</code> file.</li>
 <li>Make a change, save it, and <em>commit</em> the change.</li>
 </ul>
@@ -251,8 +259,8 @@ I repeat, not automatically saved!</span></li>
 <li>Go to your GitHub page or project/lab page</li>
 <li>Create a new repository</li>
 <li><code>Clone</code> the repo to your local machine</li>
-<li>Edit the local copy; save, and commit.</li>
-<li>Push the changed version back to GitHub.</li>
+<li>Edit the local copy; save, and <code>commit</code></li>
+<li><code>Push</code> the changed version back to GitHub</li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2>Use Case: Data analysis</h2></hgroup><article  id="use-case-data-analysis">
@@ -280,15 +288,15 @@ I repeat, not automatically saved!</span></li>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/github-create-new-repo.png" width="946" style="display: block; margin: auto;" /></p>
+<p><img src="img/github-create-new-repo.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/github-create-new-repo-2.png" width="780" style="display: block; margin: auto;" /></p>
+<p><img src="img/github-create-new-repo-2.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2>&lsquo;Clone&rsquo; the repo</h2></hgroup><article  id="clone-the-repo">
 
-<p><img src="img/github-clone-repo.png" width="1049" style="display: block; margin: auto;" /></p>
+<p><img src="img/github-clone-repo.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2>Create an RStudio project</h2></hgroup><article  id="create-an-rstudio-project">
 
@@ -329,7 +337,7 @@ I repeat, not automatically saved!</span></li>
 <li>Ignore <code>*.Rproj</code> file–your settings are your own</li>
 <li>Ignore <code>.DS_store</code> files on Mac OS–your settings are your own</li>
 <li>Maybe ignore data files (to protect identities)–<span class="red">
-GitHub is public</span></li>
+GitHub is public (unless you specify otherwise)</span></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
@@ -351,6 +359,22 @@ GitHub is public</span></li>
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
 <p><img src="img/github-after-initial-commit.png" width="800px" style="display: block; margin: auto;" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Pro tips</h2></hgroup><article  id="pro-tips">
+
+<ul>
+<li>Exclude your <code>.Rhistory</code> from version control.</li>
+<li>Exclude (and don’t use!) the <code>.RData</code> file
+
+<ul>
+<li>Regenerate all internal data states anew</li>
+<li>Avoid hidden dependencies in your code</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<p><img src="img/tools-project-options-general.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2>Edit the repo</h2></hgroup><article  id="edit-the-repo">
 
@@ -380,11 +404,11 @@ GitHub is public</span></li>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/github-pages-1.png" width="1240" style="display: block; margin: auto;" /></p>
+<p><img src="img/github-pages-1.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<p><img src="img/github-pages-2.png" width="1235" style="display: block; margin: auto;" /></p>
+<p><img src="img/github-pages-2.png" width="900px" style="display: block; margin: auto;" /></p>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Git goin’ !</h2></hgroup><article  id="git-goin">
 
@@ -440,10 +464,10 @@ GitHub is public</span></li>
 <li>Be wary and especially careful with data about people</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Thank you</h2></hgroup><article  id="thank-you">
+</article></slide><slide class=""><hgroup><h2>Do great work!</h2></hgroup><article  id="do-great-work">
 
 <div class="centered">
-<p>Rick Gilmore</br> rog1@psu.edu</br> 114 Moore</br> <a href='https://gilmore-lab.github.io/' title=''>https://gilmore-lab.github.io/</a></br> <a href='https://github.com/gilmore-lab/' title=''>https://github.com/gilmore-lab/</a></p></div></article></slide>
+<p>Rick Gilmore</br> rog1@psu.edu</br> 114 Moore</br> <a href='https://gilmore-lab.github.io/' title=''>https://gilmore-lab.github.io/</a></br> <a href='https://github.com/gilmore-lab/' title=''>https://github.com/gilmore-lab/</a> </br> </br> <a href='https://gilmore-lab.github.io/2021-11-17-github/' title=''>https://gilmore-lab.github.io/2021-11-17-github/</a></p></div></article></slide>
 
 
   <slide class="backdrop"></slide>
